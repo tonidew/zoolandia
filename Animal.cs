@@ -6,7 +6,7 @@ class Animal {
     public int legs { get; set; }
     public bool fur { get; set; }
     public string sound { get; set;}
-
+    private string _food = ""; 
 
     // Public method
     public void walk () {
@@ -21,6 +21,7 @@ class Animal {
 // FIRST GENUS  - Derived class - (bears)
 class Ursus : Animal {
     public string Color { get; set; }
+    private string _fish = "";
 
     public override void eat (string fish) {
         _fish = fish;
@@ -30,29 +31,36 @@ class Ursus : Animal {
 // Derived class of Alaskan Brown Bear - the first species
 class Arctos : Ursus {
     public string Name { get; set; }
+    private string _habitat = "";
+
 }
 
 // Derived class of Asian Black Bear - the second species
 class Thibetanus : Ursus {
     public string Name { get; set; }
+    private string _habitat = "";
+
 
 }
 
 // Derived class of Newfoundland Black Bear - the third species
 class Americanus hamiltoni : Ursus {
     public string Name { get; set; }
+    private string _habitat = "";
 
 } 
 
 // Derived class of American Black Bear - the fourth species
 class Americanus : Ursus {
     public string Name { get; set; }
+    private string _habitat = "";
 
 }
 
 // Derived class of Polar Bear - the fifth species
 class Maritimus : Ursus {
     public string Name { get; set; }
+    private string _habitat = "Arctic Circle";
 }
 
 // SECOND GENUS - Derived class - (frogs)
